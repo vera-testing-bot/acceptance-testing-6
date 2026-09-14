@@ -6,6 +6,11 @@ def add(left: int, right: int) -> int:
     return left + right
 
 
+def subtract(left: int, right: int) -> int:
+    """Return the difference of two integers."""
+    return left - right
+
+
 def answer() -> int:
     """Return the constant answer to everything."""
     return 42
