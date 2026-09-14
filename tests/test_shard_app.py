@@ -5,7 +5,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
-from shard_app import add, answer, subtract  # noqa: E402
+from shard_app import add, answer, reverse_string, subtract  # noqa: E402
 
 
 def test_add() -> None:
@@ -18,3 +18,8 @@ def test_subtract() -> None:
 
 def test_answer() -> None:
     assert answer() == 42
+
+
+def test_reverse_string() -> None:
+    assert reverse_string("abc") == "cba"
+    assert reverse_string("") == ""

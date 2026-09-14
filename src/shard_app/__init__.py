@@ -14,3 +14,8 @@ def subtract(left: int, right: int) -> int:
 def answer() -> int:
     """Return the constant answer to everything."""
     return 42
+
+
+def reverse_string(text: str) -> str:
+    """Return ``text`` with its characters reversed."""
+    return text[::-1]
